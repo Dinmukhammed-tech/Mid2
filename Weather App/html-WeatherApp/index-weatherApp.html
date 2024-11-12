@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-WeatherApp/style-weatherApp.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city holder" spellcheck="false" class="searchBox">
+            <button type="submit" class="searchBtn"><img src="../assets-WeatherApp/weather-app-img/images/search.png" ></button>
+            <button class="myLocationBtn"><img src="../assets-WeatherApp/weather-app-img/images/my_location.png" ></button>
+            <div class="unit-toggle">
+                <input type="checkbox" id="toggleSwitch" class="toggle-checkbox" />
+                <label for="toggleSwitch" class="toggle-label">
+                    <span class="toggle-celsius">°C</span>
+                    <span class="toggle-fahrenheit">°F</span>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            
+        </div>
+        
+        
+        <div class="weather_container">
+            <div class="weather-summary">
+                <img src="../assets-WeatherApp/weather-app-img/images/clear.png" class="weather-icon">
+                <h1 class="temp">2°C</h1>
+                <h2 class="city">Kaskelen</h2>
+            </div>
+            <div class="weather_details">
+                <div class="row">
+                    <div class="humidity_icon">
+                        <img src="../assets-WeatherApp/weather-app-img/images/humidity.png" >
+                    </div>
+                    <div class="humidity_data">
+                        <h3>79%</h3>
+                        <h4>Humidity</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wind_speed_icon">
+                        <img src="../assets-WeatherApp/weather-app-img/images/wind.png" >
+                    </div>
+                    <div class="wind_speed_data">
+                        <h3>6 km/h</h3>
+                        <h4>Wind Speed</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather_container five_day_forecast">
+            <div class="forecast-day">
+                <h3 class="date">Date</h3>
+                <img src="" class="forecast-icon" />
+                <h4 class="forecast-temp">Temp</h4>
+            </div>
+            <div class="forecast-day">
+                <h3 class="date">Date</h3>
+                <img src="" class="forecast-icon" />
+                <h4 class="forecast-temp">Temp</h4>
+            </div>
+            <div class="forecast-day">
+                <h3 class="date">Date</h3>
+                <img src="" class="forecast-icon" />
+                <h4 class="forecast-temp">Temp</h4>
+            </div>
+            <div class="forecast-day">
+                <h3 class="date">Date</h3>
+                <img src="" class="forecast-icon" />
+                <h4 class="forecast-temp">Temp</h4>
+            </div>
+            <div class="forecast-day">
+                <h3 class="date">Date</h3>
+                <img src="" class="forecast-icon" />
+                <h4 class="forecast-temp">Temp</h4>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <script src="../script-WeatherApp/script-weatherApp.js"></script>
+</body>
+</html>

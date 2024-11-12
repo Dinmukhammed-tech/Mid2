@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+.card{
+    width:90%;
+    max-width: 600px;
+    background-image: linear-gradient(135deg, cyan,rgb(168, 6, 168));
+    color:#fff;
+    margin:100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    gap:10px;
+}
+.search{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search button img{
+    width: 16px;
+}
+.search button img:last-child{
+    width: 35px;
+    
+}
+.weather_container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:50px auto 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.five_day_forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    width: 18%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.unit-toggle {
+    display: flex;
+    justify-content: center;
+    margin:0 10px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4cafa5;
+}
+
+.toggle-celsius,
+.toggle-fahrenheit {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.toggle-celsius {
+    position: absolute;
+    left: 10px;
+}
+
+.toggle-fahrenheit {
+    position: absolute;
+    right: 10px;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-slider {
+    transform: translateX(40px);
+}
+
+.toggle-checkbox:not(:checked) + .toggle-label .toggle-fahrenheit {
+    color: #848282;
+    
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-celsius {
+    color: #000000;
+}
